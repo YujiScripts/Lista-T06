@@ -1,0 +1,18 @@
+// Exercicio12.java
+import java.util.Scanner;
+public class Exercicio12 {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Termos de precisão: ");
+        int termos = sc.nextInt(), i = 0;
+        double meuPi = 0, divisor = 1;
+        while (i < termos) {
+            if (i % 2 == 0) meuPi += 1.0 / divisor;
+            else meuPi -= 1.0 / divisor;
+            divisor += 2; i++;
+        }
+        meuPi *= 4;
+        System.out.println("Aproximação: " + meuPi);
+        System.out.println("Math.PI:     " + Math.PI);
+    }
+}
