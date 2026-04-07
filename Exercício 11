@@ -1,0 +1,16 @@
+// Exercicio11.java
+import java.util.Scanner;
+public class Exercicio11 {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Digite um número: ");
+        int num = sc.nextInt();
+        boolean primo = num > 1;
+        int d = 2;
+        while (d <= Math.sqrt(num)) {
+            if (num % d == 0) { primo = false; break; }
+            d++;
+        }
+        System.out.println(num + (primo ? " é primo." : " não é primo."));
+    }
+}
