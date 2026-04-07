@@ -1,0 +1,15 @@
+// Exercicio03.java
+import java.util.Scanner;
+public class Exercicio03 {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        double soma = 0; int cont = 0;
+        while (true) {
+            System.out.print("Temperatura (999 p/ sair): ");
+            double t = sc.nextDouble();
+            if (t == 999) break;
+            soma += t; cont++;
+        }
+        if (cont > 0) System.out.println("Média: " + (soma / cont));
+    }
+}
