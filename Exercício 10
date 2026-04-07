@@ -1,0 +1,14 @@
+// Exercicio10.java
+public class Exercicio10 {
+    public static void main(String[] args) {
+        double valorMaquinal = 500000, custoManutencaoAnual = 15000, manutencaoAcumulada = 0;
+        int anos = 0;
+        while (manutencaoAcumulada <= valorMaquinal) {
+            anos++;
+            manutencaoAcumulada += custoManutencaoAnual;
+            valorMaquinal *= 0.88; // Depreciação de 12%
+            custoManutencaoAnual += 5000; // Aumento da manutenção
+        }
+        System.out.println("Em " + anos + " anos o custo de manutenção supera o valor da máquina.");
+    }
+}
