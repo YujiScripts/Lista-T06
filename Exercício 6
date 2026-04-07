@@ -1,0 +1,16 @@
+// Exercicio06.java
+import java.util.Scanner;
+public class Exercicio06 {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        double soma = 0, maior = -1, menor = 999;
+        for (int i = 1; i <= 10; i++) {
+            System.out.print("Altura do bloco " + i + ": ");
+            double h = sc.nextDouble();
+            soma += h;
+            if (h > maior) maior = h;
+            if (h < menor) menor = h;
+        }
+        System.out.println("Média: " + (soma/10) + " | Maior: " + maior + " | Menor: " + menor);
+    }
+}
