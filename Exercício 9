@@ -1,0 +1,14 @@
+// Exercicio09.java
+import java.util.Scanner;
+public class Exercicio09 {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Base b e Número n: ");
+        double b = sc.nextDouble(), n = sc.nextDouble();
+        int count = 0;
+        while (n > 1) {
+            n /= b; count++;
+        }
+        System.out.println("Pode ser dividido " + count + " vezes.");
+    }
+}
